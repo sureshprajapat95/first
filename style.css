@@ -1,0 +1,110 @@
+body {
+  font: 1.25em sans-serif;
+  background-color: white;
+}
+
+/* modernizr targeting */
+.no-webanimations body{
+  background-color:blue;
+}
+/* 
+* Hides the element from the old browsers
+*/
+.no-webanimations svg#isi-wave{display:none;}
+
+/* 
+* Hides the element from browsers that can render the animations  */
+.webanimations .waves-img {display:none;}
+.no-webanimations .waves-img.img {display:inline-block;}
+
+/* your code from the forums */ 
+#isi-wave #wave {
+  -webkit-animation: moveWave 4s linear 0s infinite;
+  animation: moveWave 4s linear 0s infinite;
+}
+#isi-wave #bubble_1 {
+  -webkit-transform: translate(0px, 220px);
+  -ms-transform: translate(0px, 220px);
+  transform: translate(0px, 220px);
+  -webkit-animation: moveIn 2s ease-in-out -1.8s infinite alternate;
+  animation: moveIn 2s ease-in-out -1.8s infinite alternate;
+}
+#isi-wave #bubble_2 {
+  -webkit-transform: translate(0px, 200px);
+  -ms-transform: translate(0px, 200px);
+  transform: translate(0px, 200px);
+  -webkit-animation: moveIn 2s ease-in-out -2.28s infinite alternate;
+  animation: moveIn 2s ease-in-out -2.28s infinite alternate;
+}
+#isi-wave #bubble_3 {
+  -webkit-transform: translate(0px, 230px);
+  -ms-transform: translate(0px, 230px);
+  transform: translate(0px, 230px);
+  -webkit-animation: moveIn 2s ease-in-out -3.2s infinite alternate;
+  animation: moveIn 2s ease-in-out -3.2s infinite alternate;
+}
+#isi-wave #bubble_4 {
+  -webkit-transform: translate(0px, 210px);
+  -ms-transform: translate(0px, 210px);
+  transform: translate(0px, 210px);
+  -webkit-animation: moveIn 2s ease-in-out -3.8s infinite alternate;
+  animation: moveIn 2s ease-in-out -3.8s infinite alternate;
+}
+#isi-wave #bubble_5 {
+  -webkit-transform: translate(0px, 210px);
+  -ms-transform: translate(0px, 210px);
+  transform: translate(0px, 210px);
+  -webkit-animation: moveIn 2s ease-in-out -0.92s infinite alternate;
+  animation: moveIn 2s ease-in-out -0.92s infinite alternate;
+}
+#isi-wave #bubble_6 {
+  -webkit-transform: translate(0px, 210px);
+  -ms-transform: translate(0px, 210px);
+  transform: translate(0px, 210px);
+  -webkit-animation: moveIn 2s ease-in-out -1.32s infinite alternate;
+  animation: moveIn 2s ease-in-out -1.32s infinite alternate;
+}
+.cssamimations.animations #isi-wave #bubble_7 {
+  -webkit-transform: translate(0px, 220px);
+  -ms-transform: translate(0px, 220px);
+  transform: translate(0px, 220px);
+  -webkit-animation: moveIn 2s ease-in-out -2.04s infinite alternate;
+  animation: moveIn 2s ease-in-out -2.04s infinite alternate;
+}
+@-webkit-keyframes moveIn {
+  to {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes moveIn {
+  to {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes moveWave {
+  to {
+    -webkit-transform: translate(-1495.81px, 0px);
+    transform: translate(-1495.81px, 0px);
+  }
+}
+@keyframes moveWave {
+  to {
+    -webkit-transform: translate(-1495.81px, 0px);
+    transform: translate(-1495.81px, 0px);
+  }
+}
+
+
+/* Webflow default breakpoints */
+
+@media screen and (max-width: 991px) {
+  /* Your responsive CSS */
+}
+@media screen and (max-width: 767px) {
+  /* Your responsive CSS */
+}
+@media screen and (max-width: 479px) {
+  /* Your responsive CSS */
+}
